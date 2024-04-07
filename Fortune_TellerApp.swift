@@ -11,7 +11,24 @@ import SwiftUI
 struct Fortune_TellerApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView() // Display HomeView as the initial view
+            ContentView() // Display ContentView with TabView
+        }
+    }
+}
+
+struct ContentView: View {
+    var body: some View {
+        TabView {
+            HomeView()
+            
+            PortfolioView()
+            
+            ResearchView()
+            
+            NotificationsView()
+            
+            ProfileView()
+            
         }
     }
 }

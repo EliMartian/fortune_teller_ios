@@ -12,24 +12,32 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Welcome to My App!")
+                Text("Welcome to Fortune Teller")
                     .font(.title)
                     .padding()
-
-                NavigationLink(destination: PortfolioView()) {
-                    Text("Go to Portfolio Page")
+                
+                NavigationLink(destination: DetailView()) {
+                    Text("Go to Detail View")
                         .foregroundColor(.blue)
                         .padding()
                 }
                 
                 Spacer()
             }
-            .navigationBarTitle("Homez")
-            .tabItem {
-                Image(systemName: "house.fill")
-                Text("Homes")
-            }
         }
+        .tabItem {
+            Image(systemName: "house.fill")
+            Text("Home")
+        }
+    }
+}
+
+struct DetailView: View {
+    var body: some View {
+        Text("This is the Detail View")
+            .font(.title)
+            .padding()
+            .navigationBarTitle("Detail")
     }
 }
 

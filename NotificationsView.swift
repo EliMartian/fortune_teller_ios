@@ -21,7 +21,7 @@ struct NotificationsView: View {
             .font(.title)
             .navigationBarTitle("Research")
             .tabItem {
-                Image(systemName: "magnifyingglass")
+                Image(systemName: "bell")
                 Text("Notifications")
             }
     }

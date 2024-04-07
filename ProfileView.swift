@@ -14,7 +14,7 @@ struct ProfileView: View {
             .font(.title)
             .navigationBarTitle("Profile")
             .tabItem {
-                Image(systemName: "magnifyingglass")
+                Image(systemName: "person.circle")
                 Text("Profile")
             }
     }

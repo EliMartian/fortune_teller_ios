@@ -14,7 +14,7 @@ struct PortfolioView: View {
             .font(.title)
             .navigationBarTitle("Portfolio")
             .tabItem {
-                Image(systemName: "magnifyingglass")
+                Image(systemName: "hourglass")
                 Text("Portfolio")
             }
     }

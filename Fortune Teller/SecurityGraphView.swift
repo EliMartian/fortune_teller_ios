@@ -25,7 +25,7 @@ struct SecurityGraphView: View {
                     GraphContent(stockData: stockData, geometry: geometry, isHovering: $isHovering, hoveredDataPoint: $hoveredDataPoint)
                         .padding(.bottom, 50) // Add bottom padding to make space for the overlay
                 } else {
-                    Text("No stock data available")
+                    Text("No security data available")
                         .foregroundColor(.gray)
                         .padding()
                 }

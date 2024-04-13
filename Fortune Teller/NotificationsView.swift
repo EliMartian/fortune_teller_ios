@@ -29,9 +29,9 @@ struct NotificationsView: View {
             VStack {
                 Text("Notifications Screen")
                     .font(.title)
-                    .foregroundColor(.white) // Set text color to white
+                    .foregroundColor(.white)
                 
-                Spacer() // Add spacer to push content to the top
+                Spacer()
             }
         }
         .navigationBarTitle("Notifications") // Set navigation bar title
